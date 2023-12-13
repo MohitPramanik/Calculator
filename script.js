@@ -128,7 +128,7 @@ buttons.forEach((button) => {
                     else {
                         screen.style.fontSize = '35px';
                         result.style.fontSize = '82px';
-                        result.style.marginTop = '-177px';
+                        result.style.marginTop = '-181px';
                         result.style.paddingRight = '6px';
                     }
                 }
