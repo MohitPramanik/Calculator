@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(233 170 241);
+}
+
+#container {
+    border: 2px solid black;
+    height: 47em;
+    width: 37em;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 15px;
+}
+
+#screen{
+    height: 27%;
+    background-color: white;
+    margin: 10px;
+    border-radius:15px 15px 12px 12px;
+}
+
+#expressions{
+    width: 100%;
+    height: 227px;
+    font-size: 82px;
+    margin-top: 30px;
+    font-size: 82px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    overflow: hidden;
+    padding: 20px;
+    padding-top: 0;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#expressions::-webkit-scrollbar{
+    display:none;
+}
+
+#result{
+    width: 100%;
+    font-size: 35px;
+    padding: 15px;
+    padding-top: 0px;
+    font-weight: bold;
+    text-align: right;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    border: none;
+    /* margin-top: -141px; */
+    margin-top: -127px;
+    padding-right: 24px;
+}
+
+#keys-box{
+    height: 73%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: 50px;
+    width: 23%;
+    margin: 3px;
+    padding: 40px;
+    padding-bottom: 58px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #7484c5;
+    color: white;
+    border-radius: 8px;
+}
+
+button:active{
+    background-color: #8da0e8;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: #51cf29;
+}
+
+
+/* RESPONSIVENESS */
+
+@media(max-width: 636px) and (min-width: 360px)
+{
+    #container {
+        border: 2px solid black;
+        height: 32em;
+        width: 20em;
+    }
+    #screen{
+        height: 25%;
+        width: 94%;
+    }
+    #expressions{
+        padding: 6px;
+        font-size: 42px ; 
+        margin-top: 16px;
+    }
+    #result{
+        font-size: 20px;
+        padding-top: 20px;
+        margin-top: -180px;
+        padding-right: 10px;
+
+
+    }
+    button {
+        justify-content: center;
+        margin: 2px;
+        padding: 33px;
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 359px) and (min-width: 275px)
+{
+    #container {
+        height: 25em;
+        width: 16em;
+    }
+
+    #keys-box{
+        height: 65%;
+    }
+
+    #expressions{
+        padding: 6px;
+        font-size: 32px;
+        margin-top: 16px;
+    }
+
+    
+    #result{
+        font-size: 15px;
+        padding-top: 32px;
+        margin-top: -206px;
+        padding-right: 8px;
+
+    }
+
+    button {
+        justify-content: center;
+        margin: 2px;
+        padding: 4px;
+        font-size: 16px;
+    }
+} 
