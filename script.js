@@ -1,6 +1,6 @@
-let show = '';
-let calculator = '';
-let compute;
+let show = ''; // Number to be displayed at top part
+let calculator = ''; // To store all the numbers or operators typed and running in backend
+let compute;  // for storing the calculated result
 let last_char, repeat = 0;
 let screen = document.getElementById('expressions');
 let result = document.getElementById('result');
@@ -35,6 +35,7 @@ buttons.forEach((button) => {
                 result.style.paddingRight = '24px';
             }
         }
+
         // for delete button
         else if (e.target.innerHTML == 'DEL') {
             show = show.slice(0, show.length - 1);
@@ -64,6 +65,7 @@ buttons.forEach((button) => {
                 }
             }
         }
+
         // for decimal point
         else if (e.target.value == '.') {
             if (screen.innerHTML == "0") {
@@ -104,7 +106,7 @@ buttons.forEach((button) => {
             }
             else {
                 // screen.style.fontSize = '35px';
-                if (result.innerHTML.length > 12) {
+                if (result.innerHTML.length > 11) {
                     result.style.fontSize = '38px';
                     screen.style.fontSize = '33px';
                 }
@@ -147,6 +149,7 @@ buttons.forEach((button) => {
                 calculator = calculator + e.target.innerHTML;
                 result.innerHTML = '= Error';
             }
+
             else if (screen.innerHTML == '0') {
                 show = e.target.innerHTML;
                 screen.innerHTML = show;
@@ -154,6 +157,17 @@ buttons.forEach((button) => {
                 compute = eval(calculator);
                 result.innerHTML = '= ' + compute;
             }
+
+
+            else if (screen.innerHTML == '0' && e.target.value == 00) {
+                show = '0';
+                screen.innerHTML = show;
+                calculator = '0';
+                compute = eval(calculator);
+                result.innerHTML = '= ' + compute;
+            }
+
+
             else {
                 show = show + e.target.innerHTML;
                 screen.innerHTML = show;
@@ -164,7 +178,7 @@ buttons.forEach((button) => {
         }
 
         // if screen element length become larger
-        if (screen.innerHTML.length > 12) {
+        if (screen.innerHTML.length > 11) {
             if (window.screen.availWidth < 637 && window.screen.availWidth > 359) {
                 screen.style.fontSize = '23px'
                 result.style.fontSize = '19px';
