@@ -20,20 +20,18 @@ buttons.forEach((button) => {
             result.innerHTML = '';
             if (window.screen.availWidth < 637 && window.screen.availWidth > 359) {
                 screen.style.fontSize = '42px'
+                screen.style.paddingTop = '18px'
                 result.style.fontSize = '24px';
-                result.style.marginTop = '-180px';
-
             }
             else if (window.screen.availWidth < 360 && window.screen.availWidth > 274) {
                 screen.style.fontSize = '32px'
+                screen.style.paddingTop = '20px'
                 result.style.fontSize = '17px';
-                result.style.marginTop = '-206px';
                 result.style.paddingRight = '8px';
             }
             else {
                 screen.style.fontSize = '82px';
                 result.style.fontSize = '35px';
-                result.style.marginTop = '-127px';
                 result.style.paddingRight = '24px';
             }
         }
@@ -50,20 +48,18 @@ buttons.forEach((button) => {
 
                 if (window.screen.availWidth < 637 && window.screen.availWidth > 359) {
                     screen.style.fontSize = '42px'
+                    screen.style.paddingTop = '18px'
                     result.style.fontSize = '24px';
-                    result.style.marginTop = '-180px';
-
                 }
                 else if (window.screen.availWidth < 360 && window.screen.availWidth > 274) {
                     screen.style.fontSize = '32px'
+                    screen.style.paddingTop = '20px'
                     result.style.fontSize = '17px';
-                    result.style.marginTop = '-206px';
                     result.style.paddingRight = '8px';
                 }
                 else {
                     screen.style.fontSize = '82px';
                     result.style.fontSize = '35px';
-                    result.style.marginTop = '-127px';
                     result.style.paddingRight = '24px';
                 }
             }
@@ -114,21 +110,20 @@ buttons.forEach((button) => {
                 }
                 else {
                     if (window.screen.availWidth < 637 && window.screen.availWidth > 359) {
-                        screen.style.fontSize = '24px'
-                        result.style.fontSize = '42px';
-                        result.style.marginTop = '-205px';
+                        screen.style.fontSize = '18px'
+                        screen.style.paddingTop = '29px'
+                        result.style.fontSize = '40px';
                         result.style.paddingRight = '6px';
                     }
                     else if (window.screen.availWidth < 360 && window.screen.availWidth > 274) {
                         screen.style.fontSize = '17px'
+                        screen.style.paddingTop = '23px'
                         result.style.fontSize = '32px';
-                        result.style.marginTop = '-219px';
                         result.style.paddingRight = '6px';
                     }
                     else {
                         screen.style.fontSize = '35px';
                         result.style.fontSize = '82px';
-                        result.style.marginTop = '-181px';
                         result.style.paddingRight = '6px';
                     }
                 }
