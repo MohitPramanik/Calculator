@@ -28,22 +28,21 @@ html,body{
     background-color: white;
     margin: 10px;
     border-radius:15px 15px 12px 12px;
+    position: relative;
 }
 
 #expressions{
+    position: absolute;
+    margin-top: 0;
+    /* padding-top: 30px; */
     width: 100%;
-    height: 227px;
-    font-size: 82px;
-    margin-top: 30px;
+    height: 100%;
+    text-align: right;
+    padding: 30px 20px;
     font-size: 82px;
     font-weight: bold;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    overflow: hidden;
-    padding: 20px;
-    padding-top: 0;
-    text-align: right;
-    display: flex;
-    flex-direction: row-reverse;
+    
 }
 
 #expressions::-webkit-scrollbar{
@@ -51,17 +50,16 @@ html,body{
 }
 
 #result{
+    height: auto;
+    position: absolute;
+    bottom: 2px;
     width: 100%;
     font-size: 35px;
-    padding: 15px;
-    padding-top: 0px;
     font-weight: bold;
     text-align: right;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: none;
-    /* margin-top: -141px; */
-    margin-top: -127px;
-    padding-right: 24px;
+    padding: 20px 23px;
 }
 
 #keys-box{
@@ -111,23 +109,24 @@ button:active{
         height: 32em;
         width: 20em;
     }
+
     #screen{
         height: 25%;
         width: 94%;
     }
+
     #expressions{
-        padding: 6px;
-        font-size: 42px ; 
-        margin-top: 16px;
+        padding: 18px 10px;
+        font-size: 42px;
     }
+
     #result{
         font-size: 20px;
         padding-top: 20px;
         margin-top: -180px;
         padding-right: 10px;
-
-
     }
+
     button {
         justify-content: center;
         margin: 2px;
@@ -136,7 +135,7 @@ button:active{
     }
 }
 
-@media(max-width: 359px) and (min-width: 275px)
+@media(max-width: 360px) and (min-width: 275px)
 {
     #container {
         height: 25em;
@@ -148,17 +147,15 @@ button:active{
     }
 
     #expressions{
-        padding: 6px;
+        padding: 20px 7px;
         font-size: 32px;
-        margin-top: 16px;
     }
 
     
     #result{
         font-size: 15px;
-        padding-top: 32px;
+        padding: 14px 8px;
         margin-top: -206px;
-        padding-right: 8px;
 
     }
 
